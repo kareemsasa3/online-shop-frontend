@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh; /* Ensure the body takes at least the viewport height */
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 0px;
+  margin-top: auto;
+}
+
+footer img {
+  width: 100%; /* Make the image take the full width of the footer */
+  height: auto; /* Maintain the aspect ratio */
+}
