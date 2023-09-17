@@ -1,0 +1,132 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  padding-right:10px;
+}
+
+/* Left section styles */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 225px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust spacing */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Remove background for the dropdown menu */
+.dropdown-menu {
+  background: none !important;
+}
+
+/* Remove background for the dropdown toggle */
+.dropdown-toggle {
+  background: none !important;
+  border: none !important;
+  font-size: 1rem; /* Adjust the font size as needed */
+  padding: 0.25rem 2rem; /* Adjust the padding as needed */
+}
+
+/* Add a dropdown arrow after the "Shop" and "About" text */
+.dropdown-toggle::after {
+  content: '\f107'; /* Unicode for the angle-down Font Awesome icon */
+  font-family: FontAwesome;
+  margin-left: 0.5em; /* Adjust spacing between text and arrow */
+}
+
+/* Right section styles */
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 350px; /* Adjust the width as needed */
+  border-radius: 50px; /* used to round off the edges */
+  font-size: 16px;
+}
+
+/* Style for the search container */
+.search-container {
+  position: relative;
+  display: flex;
+}
+
+/* Style for the search button */
+.search-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px; /* Adjust the position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Adjust padding for icons */
+.icon {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Add styles for user, heart, and cart icons */
+.fa {
+  margin-right: 10px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.fa:hover {
+  color: #f1f1f1;
+}
+
