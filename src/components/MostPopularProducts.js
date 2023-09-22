@@ -1,24 +1,33 @@
-import React from 'react';
-import Product from './Product';
-import '../styles/MostPopularProducts.css';
+import React, { useState, useEffect } from 'react';
+import api from '../utils/api.js';
 
 const MostPopularProducts = () => {
-  // Dummy product data (you'll replace this with data from your Spring application)
-  const popularProducts = [
-    { id: 1, name: 'Product 1', price: 19.99, imageUrl: 'image1.jpg', size: 'M' },
-    // Add more product data
-  ];
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await api.get('/products');
+        const productArray = Object.values(response.data);
+        setProducts(productArray);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (!products || products.length === 0) {
+    return <div>No products available.</div>;
+  }
 
   return (
     <div>
-      <h2 className="most-popular-heading">Most Popular</h2>
-      <div className="product-scroll">
-        {popularProducts.map(product => (
-          <Product key={product.id} product={product} />
-        ))}
-      </div>
+      <h2>Most Popular Products</h2>
+      {console.log(products)} {/* Add this line to check the contents of the products array */}
     </div>
   );
-}
+};
 
 export default MostPopularProducts;
