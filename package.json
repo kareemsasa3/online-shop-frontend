@@ -2,6 +2,9 @@
   "name": "online-shop-frontend",
   "version": "0.1.0",
   "proxy": "http://localhost:8080",
+  "devServer": {
+    "mimeTypes": { "text/css": ["css"] }
+  },
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.0.0",

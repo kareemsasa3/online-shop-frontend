@@ -1,13 +1,11 @@
 import React from 'react';
 import '../styles/footer.css';
-import footer from '../assets/squish-footer.png';
-
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footerDiv">
         <footer>
-            <img src={footer} alt="Footer" className="footer" />
+            <img src="/images/squish-footer.png" alt="Footer" className="footerImage" />
         </footer>
     </div>
   );

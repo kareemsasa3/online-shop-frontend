@@ -15,13 +15,13 @@ main {
   flex: 1;
 }
 
-footer {
+.footerDiv {
   text-align: center;
   padding: 0px;
   margin-top: auto;
 }
 
-footer img {
+.footerImage {
   width: 100%; /* Make the image take the full width of the footer */
   height: auto; /* Maintain the aspect ratio */
 }

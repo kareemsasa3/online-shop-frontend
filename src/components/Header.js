@@ -1,12 +1,11 @@
 import React from 'react';
 import '../styles/header.css';
-import logo from '../assets/squish-logo.png';
 
 const Header = () => {
   return (
     <div className="header">
       <div className="left-section">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src="/images/squish-logo.png" alt="Logo" className="logo" />
         <div className="dropdown">
           <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Shop
