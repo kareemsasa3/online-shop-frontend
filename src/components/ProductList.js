@@ -27,6 +27,7 @@ const MostPopularProducts = () => {
       <div className="product-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
+            <img src={product.imageUrl} alt={product.name} />
             <div>
               <strong>Name:</strong> {product.name}
             </div>

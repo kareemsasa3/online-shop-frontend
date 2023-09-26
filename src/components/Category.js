@@ -30,6 +30,7 @@ const Category = () => {
                 {products.map((product) => (
                     <div key={product.id} className="col-md-4">
                         <div className="product-card">
+                            <img src={product.imageUrl} alt={product.name} />
                             {/* Display product details */}
                             <div>
                                 <strong>Name:</strong> {product.name}
