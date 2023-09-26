@@ -1,0 +1,10 @@
+.category-title {
+  text-align: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* Add other styles for the product card */
+}
